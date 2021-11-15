@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
 :root{
-    --blue:#0188DF;
-    --black:354046;
+    --blue:#0a9280;
+    --black:#354046;
 }
 
 *{
@@ -58,6 +58,11 @@ section{
     background-color: var(--black);
     z-index: -1;
     transition: .2s linear;
+}
+h4 { 
+    text-align:left;
+    color: black;
+    
 }
 
 .button:hover:before{
@@ -239,6 +244,105 @@ header .fa-bars{
     border-radius: 50%;
     object-fit: cover;
 }
+
+.feedback .box-container .box p{
+    font-size: 1.4rem;
+    color: var(--black);
+}
+
+.feedback .box-container .box h3{
+    text-align: end;
+    color: var(--blue);
+}
+
+.feedback .box-container .box span{
+    text-align: end;
+    color: var(--black);
+    display: block;
+    font-size: 1.5rem;
+}
+
+.feedback .box-container .box::before{
+    content: '';
+    position: absolute;
+    bottom: -1rem; left: .4rem;
+    height: 2rem;
+    width: 2rem;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+.counter .box-container{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.counter .box-container .box{
+    margin: 2rem 5rem;
+    text-align: center;
+}
+
+.counter .box-container .box i{
+    color: var(--blue);
+    font-size: 5rem;
+}
+
+.counter .box-container .box span{
+    color: var(--black);
+    font-size: 3rem;
+    display: block;
+    padding: 1rem 0;
+}
+
+.counter .box-container .box span{
+    color: #666;
+}
+
+.contacts{
+    background: var(--black);
+}
+
+.contacts .heading{
+    color:#fff;
+}
+
+.contacts form{
+    text-align: center;
+}
+
+.contacts form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts form .inputBox input, select{
+    height: 4rem;
+    width: 49%;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.contacts form textarea{
+    height: 20rem;
+    resize: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.contacts form input[type="submit"]{
+    width: 20rem;
+}
+
+.contacts form input[type="submit"]:hover{
+    background: var(--black);
+}
+
 header .fa-times{
     transform: rotate(180deg);
 }
@@ -287,6 +391,14 @@ header .fa-times{
     header .nav-toggle{
         top: 50%;
         opacity: 1;
+    }
+
+    .contacts form .inputBox input, select{
+        width: 100%;
+    }
+
+    .contacts form input[type="submit"]{
+        width: 100%;
     }
 }
     
